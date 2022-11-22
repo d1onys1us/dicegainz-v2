@@ -1,5 +1,5 @@
 name: Bug report 🐛
-description: File a bug report
+description: Report a bug
 title: "[Bug] <insert descriptive title>"
 labels: ["bug", "triage"]
 body:
@@ -11,7 +11,7 @@ body:
     id: description
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
+      description: Also, what did you expect to happen?
       value: Description of the bug here.
     validations:
       required: true
@@ -19,11 +19,11 @@ body:
     id: steps-to-reproduce
     attributes:
       label: Steps to reproduce
-      description: Steps to reproduce the bug.
+      description: Steps to reproduce the bug, a numbered list could be good.
       value: Steps to reproduce here.
   - type: textarea
     id: additional-context
     attributes:
       label: Additional context
-      description: Please add any additional context, screenshots, etc.
+      description: Provide any additional context, screenshots, etc.
       value: Additional context here.
