@@ -1,4 +1,4 @@
-name: 🐛 Bug report
+name: Bug report 🐛
 description: File a bug report
 title: "[Bug] <insert descriptive title>"
 labels: ["bug", "triage"]
@@ -8,16 +8,19 @@ body:
       value: |
         Thanks for taking the time to improve Taiko!
   - type: textarea
-    id: what-happened
+    id: description
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Description of the bug here.
+      label: Describe the bug
+      description: A clear and concise description of the bug and expected behavior.
     validations:
       required: true
   - type: textarea
-    id: details
+    id: steps-to-reproduce
     attributes:
-      label: Details
-      description: Please add any additional details, code examples, screenshots, links, etc.
-      placeholder: Additional details here.
+      label: Steps to reproduce
+      description: Steps to reproduce the bug.
+  - type: textarea
+    id: additional-details
+    attributes:
+      label: Additional details
+      description: Please add any additional details, screenshots, logs, etc.
