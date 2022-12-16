@@ -1,55 +1,21 @@
-title: "[General] "
-labels: ["General Introduction"]
+title: "<title>"
+labels: [Accessibility]
 body:
-  - type: markdown
+  - type: dropdown
     attributes:
-      value: |
-        This is text that will show up in the template!
-  - type: textarea
-    id: improvements
-    attributes:
-    label: Top 3 improvements
-    description: "What are the top 3 improvements we could make to this project?"
-    value: |
-      1.
-      2.
-      3.
-      ...
-    render: bash
-    validations:
-    required: true
-  - type: markdown
-    attributes:
-      value: |
-        ## Markdown header
-        And some more markdown
-  - type: input
-    id: has-id
-    attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
+      label: Select Topic Area
+      description: What would you like to discuss?
+      options:
+        - "Product Feedback"
+        - "Question"
+        - "Bug"
+        - "Show & Tell"
+        - "General"
     validations:
       required: true
-  - type: dropdown
-    id: download
+  - type: textarea
     attributes:
-    label: Which area of this project could be most improved?
-    options:
-      - Documentation
-      - Pull request review time
-      - Bug fix time
-      - Release cadence
+      label: Body
+      description: Start your discussion!
     validations:
-    required: true
-  - type: checkboxes
-    attributes:
-      label: Check that box!
-      options:
-        - label: This one!
-          required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
-    attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_
+      required: true
