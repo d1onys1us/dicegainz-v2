@@ -6,7 +6,7 @@
 
 ## Getting started
 
-Just follow the package.json.
+Just follow the package.json. edit dat
 
 ## Contributors
 
