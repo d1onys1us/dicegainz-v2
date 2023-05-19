@@ -1,14 +1,14 @@
-name: Add project to Taiko's ecosystem 🌐
-description: Add project to Taiko's ecosystem 🌐
+name: Add a project to Taiko's ecosystem 🌐
+description: "Add a project to Taiko's ecosystem. You can see Taiko's ecosystem page here: https://taiko.xyz/ecosystem."
 labels: ["category.enhancement", "status.needs-triage"]
 body:
-  - type: textarea
+  - type: input
     id: title
     attributes:
       label: Title of your project
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: link
     attributes:
       label: Link to your project
