@@ -1,7 +1,13 @@
 name: Add a project to Taiko's ecosystem 🌐
 description: "Add a project to Taiko's ecosystem. You can see Taiko's ecosystem page here: https://taiko.xyz/ecosystem."
 labels: ["category.enhancement", "status.needs-triage"]
+assignees:
+  - d1onys1us
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
   - type: input
     id: title
     attributes:
@@ -17,7 +23,7 @@ body:
   - type: textarea
     id: logo
     attributes:
-      label: High quality logo to your project
+      label: Upload a quality logo to your project
       description: 512x512 or 1:1 ratio is preferred. If you don't have one that's okay, and we will use a placeholder image.
     validations:
       required: false
