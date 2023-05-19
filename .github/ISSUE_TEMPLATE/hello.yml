@@ -1,0 +1,23 @@
+name: Add project to Taiko's ecosystem 🌐
+description: Add project to Taiko's ecosystem 🌐
+labels: ["category.enhancement", "status.needs-triage"]
+body:
+  - type: textarea
+    id: title
+    attributes:
+      label: Title of your project
+    validations:
+      required: true
+  - type: textarea
+    id: link
+    attributes:
+      label: Link to your project
+    validations:
+      required: true
+  - type: textarea
+    id: logo
+    attributes:
+      label: High quality logo to your project
+      description: 512x512 or 1:1 ratio is preferred. If you don't have one that's okay, and we will use a placeholder image.
+    validations:
+      required: false
