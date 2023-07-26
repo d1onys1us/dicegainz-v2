@@ -1,4 +1,4 @@
-name: "Add a project to Taiko yep ecosystem 🌐"
+name: "Add a project to Taiko's edddddcosystem 🌐"
 description: "Add a project to Taiko's ecosystem"
 title: "Add [PROJECT_NAME] to the ecosystem"
 labels: ["category.enhancement", "status.needs-triage", "category.ecosystem"]
@@ -30,15 +30,22 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: isLive
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Live on Testnet
+      description: Is your project deployed on one of Taiko's testnets?
       multiple: false
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - "Yes"
+        - "No"
     validations:
       required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: If your project is live on testnet, please provide evidence of that here.
+    validations:
+      required: false
   - type: textarea
     id: logo
     attributes:
