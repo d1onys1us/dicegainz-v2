@@ -1,29 +1,54 @@
-name: Feature request 💡
-description: Request a feature
-title: "[Feat] <insert descriptive title>"
-labels: ["feat", "triage"]
+name: Add a project to Taiko's ecosystem 🌐
+description: Add a project to Taiko's ecosystem
+title: Add [PROJECT_NAME] to the ecosystem
+labels: ["category.enhancement", "status.needs-triage", "category.ecosystem"]
+assignees:
+  - d1onys1us
+  - 2manslkh
+  - MarcusWentz
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to improve Taiko! Before submitting, please check if an existing issue already exists.
-  - type: textarea
-    id: description
+        Thanks for taking the time to add your project. You can see existing examples on Taiko's ecosystem page [here](https://taiko.xyz/ecosystem)!
+  - type: input
+    id: title
     attributes:
-      label: Describe the feature request
-      description: A concise description of what the problem and proposed solution is.
-      value: Description of the feature request here.
+      label: Title of your project
     validations:
       required: true
-  - type: textarea
-    id: alternatives
+  - type: input
+    id: description
     attributes:
-      label: Describe alternatives you've considered
-      description: A concise description of any alternative solutions you've considered.
-      value: Description of the alternatives you've considered here.
-  - type: textarea
-    id: additional-context
+      label: Short (1-2 sentence) description of your project
+    validations:
+      required: true
+  - type: input
+    id: link
     attributes:
-      label: Additional context
-      description: Provide any additional context, screenshots, etc.
-      value: Additional context here.
+      label: Link to your project
+    validations:
+      required: true
+  - type: checkboxes
+    id: isLive
+    attributes:
+      label: Is your project live on one of Taiko's testnets?
+      description: If your project is live on testnet, we will add a "Live on Testnet" badge to your project.
+      options:
+        - label: Yes
+          required: true
+        - label: No
+          required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: If live on testnet, please provide evidence here that your project is integrated with Taiko.
+    validations:
+      required: false
+  - type: textarea
+    id: logo
+    attributes:
+      label: Upload a quality logo to your project
+      description: 512x512 or 1:1 ratio is preferred. If no image is provided we will use a placeholder image.
+    validations:
+      required: false
