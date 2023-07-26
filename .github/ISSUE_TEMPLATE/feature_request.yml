@@ -29,22 +29,14 @@ body:
       label: Link to your project
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: isLive
     attributes:
       label: Is your project live on one of Taiko's testnets?
       description: If your project is live on testnet, we will add a "Live on Testnet" badge to your project.
       options:
-        - label: Yes
-          required: true
-        - label: No
-          required: true
-  - type: input
-    id: evidence
-    attributes:
-      label: If live on testnet, please provide evidence here that your project is integrated with Taiko.
-    validations:
-      required: false
+        - Yes
+        - No
   - type: textarea
     id: logo
     attributes:
