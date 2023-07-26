@@ -35,8 +35,8 @@ body:
       label: Is your project live on one of Taiko's testnets?
       description: If your project is live on testnet, we will add a "Live on Testnet" badge to your project.
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
   - type: textarea
     id: logo
     attributes:
