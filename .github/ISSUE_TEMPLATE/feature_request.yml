@@ -30,13 +30,15 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: isLive
     attributes:
-      label: Is your project live on one of Taiko's testnets?
-      description: If your project is live on testnet, we will add a "Live on Testnet" badge to your project.
+      label: Version
+      description: What version of our software are you running?
+      multiple: false
       options:
-        - "Yes"
-        - "No"
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+    validations:
+      required: true
   - type: textarea
     id: logo
     attributes:
